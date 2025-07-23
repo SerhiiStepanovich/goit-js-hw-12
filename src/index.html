@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form class="form" id="search-form">
+        <label>
+          <input
+            id="search-input"
+            list="name-list"
+            type="text"
+            name="search-text"
+            placeholder="search-images..."
+            required
+          />
+          <datalist id="name-list"></datalist>
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <span class="loader hidden"></span>
+      <ul class="gallery"></ul>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
